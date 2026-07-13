@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#8b0000" />
+
+    <title>Esporte Clube 14 de Julho | O Primeiro Rubro-Negro do Brasil</title>
+    <meta
+      name="description"
+      content="Site oficial do Esporte Clube 14 de Julho, de Sant'Ana do Livramento (RS). O Leão da Fronteira, o Primeiro Rubro-Negro do Brasil, fundado em 1902. Seja sócio, conheça a academia, a loja e as notícias do clube."
+    />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../public/assets/escudo.png" />
+    <link rel="apple-touch-icon" href="../public/assets/escudo.png" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Esporte Clube 14 de Julho | O Primeiro Rubro-Negro do Brasil" />
+    <meta
+      property="og:description"
+      content="O Leão da Fronteira, fundado em 1902 em Sant'Ana do Livramento (RS). Seja sócio, conheça a academia e a loja oficial."
+    />
+    <meta property="og:image" content="../public/assets/escudo.png" />
+    <meta property="og:locale" content="pt_BR" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+
+  <body>
+    <!-- ============ HEADER / NAV ============ -->
+    <header class="header" id="header">
+      <div class="container header__inner">
+        <a href="#home" class="brand" aria-label="Início - Esporte Clube 14 de Julho">
+          <img src="../public/assets/escudo.png" alt="Escudo do Esporte Clube 14 de Julho" class="brand__logo" />
+          <span class="brand__name">EC 14 DE JULHO</span>
+        </a>
+
+        <nav class="nav" id="nav" aria-label="Navegação principal">
+          <ul class="nav__list">
+            <li><a href="#home" class="nav__link active">Início</a></li>
+            <li><a href="#jogos" class="nav__link">Jogos</a></li>
+            <li><a href="#noticias" class="nav__link">Notícias</a></li>
+            <li><a href="#academia" class="nav__link">Academia</a></li>
+            <li><a href="#loja" class="nav__link">Loja</a></li>
+            <li><a href="#socio" class="nav__link nav__link--cta">Seja Sócio</a></li>
+          </ul>
+        </nav>
+
+        <button class="hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <!-- ============ HERO / SLIDER ============ -->
+      <section class="hero" id="home" aria-label="Destaques do clube">
+        <div class="slider" id="slider">
+          <div class="slide is-active" style="background-image: url('../public/assets/hero-stadium.png')">
+            <div class="slide__overlay"></div>
+            <div class="container slide__content">
+              <img src="../public/assets/escudo.png" alt="" class="slide__crest" aria-hidden="true" />
+              <h1 class="slide__title">EC 14 DE JULHO</h1>
+              <p class="slide__subtitle">O 1º Rubro-Negro do Brasil</p>
+              <p class="slide__tag">Sant'Ana do Livramento / RS · Fundado em 14/07/1902</p>
+              <a href="#socio" class="btn btn--primary">Conheça nossa história</a>
+            </div>
+          </div>
+
+          <div class="slide" style="background-image: url('../public/assets/hero-players.png')">
+            <div class="slide__overlay"></div>
+            <div class="container slide__content">
+              <img src="../public/assets/escudo.png" alt="" class="slide__crest" aria-hidden="true" />
+              <h2 class="slide__title">Paixão Rubro-Negra</h2>
+              <p class="slide__subtitle">Tradição, força e garra em campo</p>
+              <p class="slide__tag">O Leão da Fronteira</p>
+              <a href="#jogos" class="btn btn--primary">Próximos jogos</a>
+            </div>
+          </div>
+
+          <div class="slide" style="background-image: url('../public/assets/hero-torcida.png')">
+            <div class="slide__overlay"></div>
+            <div class="container slide__content">
+              <img src="../public/assets/escudo.png" alt="" class="slide__crest" aria-hidden="true" />
+              <h2 class="slide__title">A Nação Leonina</h2>
+              <p class="slide__subtitle">Faça parte dessa história centenária</p>
+              <p class="slide__tag">Mais de 120 anos de tradição</p>
+              <a href="#socio" class="btn btn--primary">Seja sócio</a>
+            </div>
+          </div>
+        </div>
+
+        <button class="slider__arrow slider__arrow--prev" id="prevSlide" aria-label="Slide anterior">&#8249;</button>
+        <button class="slider__arrow slider__arrow--next" id="nextSlide" aria-label="Próximo slide">&#8250;</button>
+
+        <div class="slider__dots" id="sliderDots" role="tablist" aria-label="Selecionar slide"></div>
+      </section>
+
+      <!-- ============ PRÓXIMOS JOGOS ============ -->
+      <section class="section" id="jogos">
+        <div class="container">
+          <div class="section__head reveal">
+            <span class="section__kicker">Agenda</span>
+            <h2 class="section__title">Próximos Jogos</h2>
+          </div>
+
+          <div class="matches">
+            <article class="match-card reveal">
+              <span class="match-card__league">Copa Fronteira</span>
+              <div class="match-card__teams">
+                <div class="match-card__team">
+                  <img src="../public/assets/adversario-1.png" alt="Escudo do Guarany de Alegrete" />
+                  <span>Liga Alegretense</span>
+                </div>
+
+                <span class="match-card__x">X</span>
+                <div class="match-card__team">
+                  <img src="../public/assets/escudo.png" alt="Escudo do 14 de Julho" />
+                  <span>14 de Julho</span>
+                </div>
+              </div>
+              <div class="match-card__info">
+                <span>09 AGO · 15h30</span>
+                <span>Estádio Municipal Farroupilha · Alegrete</span>
+              </div>
+              <a href="#" class="btn btn--outline btn--sm">Saiba mais</a>
+            </article>
+
+            <article class="match-card reveal">
+              <span class="match-card__league">Copa Fronteira</span>
+              <div class="match-card__teams">
+                <div class="match-card__team">
+                  <img src="../public/assets/escudo.png" alt="Escudo do 14 de Julho" />
+                  <span>14 de Julho</span>
+                </div>
+                <span class="match-card__x">X</span>
+                <div class="match-card__team">
+                  <img src="../public/assets/adversario-2.png" alt="Escudo do Armour Foot Ball Club" />
+                  <span>Armour F.C.</span>
+                </div>
+              </div>
+              <div class="match-card__info">
+                <span>16 AGO · 15h30</span>
+                <span>Estádio João Martins · Sant'Ana do Livramento</span>
+              </div>
+              <a href="#" class="btn btn--outline btn--sm">Saiba mais</a>
+            </article>
+
+            <article class="match-card reveal">
+              <span class="match-card__league">Copa Fronteira</span>
+              <div class="match-card__teams">
+                <div class="match-card__team">
+                  <img src="../public/assets/escudo.png" alt="Escudo do 14 de Julho" />
+                  <span>14 de Julho</span>
+                </div>
+                <span class="match-card__x">X</span>
+                <div class="match-card__team">
+                  <img src="../public/assets/adversario-3.png" alt="Escudo do Grêmio Esportivo" />
+                  <span>GEM</span>
+                </div>
+              </div>
+              <div class="match-card__info">
+                <span>23 AGO · 15h30</span>
+                <span>Estádio João Martins · Sant'Ana do Livramento</span>
+              </div>
+              <a href="#" class="btn btn--outline btn--sm">Saiba mais</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ NOTÍCIAS ============ -->
+      <section class="section section--dark" id="noticias">
+        <div class="container">
+          <div class="section__head reveal">
+            <span class="section__kicker section__kicker--light">Fique por dentro</span>
+            <h2 class="section__title section__title--light">Últimas Notícias</h2>
+          </div>
+
+          <div class="news">
+            <article class="news-card reveal">
+              <div class="news-card__media"><img src="../public/assets/noticia-1.png" alt="Jogadores do 14 de Julho comemorando vitória" /></div>
+              <div class="news-card__body">
+                <span class="news-card__date">14 AGO 2026</span>
+                <h3 class="news-card__title">Uma nova era do EC.14 DE JULHO</h3>
+                <p class="news-card__excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, ut itaque hic nesciunt!.</p>
+                <a href="#" class="news-card__link">Ler mais &#8594;</a>
+              </div>
+            </article>
+
+            <article class="news-card reveal">
+              <div class="news-card__media"><img src="../public/assets/escolhinha.JPG" alt="Treinador orientando atletas no treino" /></div>
+              <div class="news-card__body">
+                <span class="news-card__date">08 JUL 2026</span>
+                <h3 class="news-card__title">Nova Escola de Futebol é inaugurada</h3>
+                <p class="news-card__excerpt">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam voluptate illum.</p>
+                <a href="#" class="news-card__link">Ler mais &#8594;</a>
+              </div>
+            </article>
+
+            <article class="news-card reveal">
+              <div class="news-card__media"><img src="../public/assets/noticia-3.png" alt="Bola no gramado do estádio" /></div>
+              <div class="news-card__body">
+                <span class="news-card__date">05 JUL 2026</span>
+                <h3 class="news-card__title">Participação do clube na Copa Fronteira</h3>
+                <p class="news-card__excerpt">lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, ut itaque hic nesciunt!.</p>
+                <a href="#" class="news-card__link">Ler mais &#8594;</a>
+              </div>
+            </article>
+
+            <article class="news-card reveal">
+              <div class="news-card__media"><img src="../public/assets/noticia-1.png" alt="Atletas do clube em campo" /></div>
+              <div class="news-card__body">
+                <span class="news-card__date">02 JUL 2026</span>
+                <h3 class="news-card__title">Novo Plano de Sócios</h3>
+                <p class="news-card__excerpt">lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, ut itaque hic nesciunt! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia odio corrupti, blanditiis fugit vitae in magnam earum odit aperiam nobis.</p>
+                <a href="#" class="news-card__link">Ler mais &#8594;</a>
+              </div>
+            </article>
+
+            <article class="news-card reveal">
+              <div class="news-card__media"><img src="../public/assets/pintura-pavilhao.jpg.jpeg" alt="Treino do clube" /></div>
+              <div class="news-card__body">
+                <span class="news-card__date">28 JUN 2026</span>
+                <h3 class="news-card__title">Pintura do pavilhão é inaugurada</h3>
+                <p class="news-card__excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, ut itaque hic nesciunt reiciendis ea quasi impedit eaque! Repellendus officia maiores explicabo sapiente rem atque mollitia libero natus veritatis excepturi!.</p>
+                <a href="#" class="news-card__link">Ler mais &#8594;</a>
+              </div>
+            </article>
+
+            <article class="news-card reveal">
+              <div class="news-card__media"><img src="../public/assets/reuniao-fgf.jpg" alt="Estádio do clube" /></div>
+              <div class="news-card__body">
+                <span class="news-card__date">25 JUN 2026</span>
+                <h3 class="news-card__title">Reunião da FGF reforça compromisso com o clube</h3>
+                <p class="news-card__excerpt">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis perferendis aperiam maxime iusto rerum delectus illo provident commodi asperiores veritatis minima.</p>
+                <a href="#" class="news-card__link">Ler mais &#8594;</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ SEJA SÓCIO ============ -->
+      <section class="socio" id="socio" style="background-image: url('../public/assets/torcida-leao-socio.png')">
+        <div class="socio__overlay"></div>
+        <div class="container socio__content reveal">
+          <span class="section__kicker section__kicker--light">Seja Sócio-Torcedor</span>
+          <h2 class="socio__title">Seja Sócio do Primeiro Rubro-Negro do Brasil</h2>
+          <p class="socio__text">
+            Faça parte da história centenária do Leão da Fronteira. Como sócio-torcedor, você apoia diretamente o clube,
+            garante vantagens exclusivas e vive de perto cada emoção do maior patrimônio esportivo de Sant'Ana do Livramento.
+          </p>
+          <a href="https://wa.me/5555996742044" target="_blank" rel="noopener" class="btn btn--primary btn--lg">Seja Sócio</a>
+        </div>
+      </section>
+
+      <!-- ============ ACADEMIA ============ -->
+      <section class="section" id="academia">
+        <div class="container academia">
+          <div class="academia__media reveal">
+            <img src="../public/assets/escolhinha.jpg" alt="Crianças treinando futebol na academia do 14 de Julho" />
+          </div>
+          <div class="academia__body reveal">
+            <span class="section__kicker">Formação de atletas</span>
+            <h2 class="section__title">Academia de Futebol 14 de Julho</h2>
+            <p class="academia__text">
+              O mais próspero centro de formação de atletas da fronteira. O Leão da Fronteira abre suas portas para formar
+              os campeões do futuro em Sant'Ana do Livramento, unindo estrutura, tradição e paixão pelo esporte.
+            </p>
+            <a href="https://wa.me/5555996742044" target="_blank" rel="noopener" class="btn btn--dark">Inscreva-se</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ LOJA ============ -->
+      <section class="section section--muted" id="loja">
+        <div class="container">
+          <div class="section__head reveal">
+            <span class="section__kicker">Produtos oficiais</span>
+            <h2 class="section__title">Loja do Clube</h2>
+          </div>
+
+          <div class="shop">
+            <article class="product reveal">
+              <div class="product__media"><img src="../public/assets/camisa-tradicional.png" alt="Camisa tradicional rubro-negra do 14 de Julho" /></div>
+              <div class="product__body">
+                <h3 class="product__name">Camisa Tradicional</h3>
+                <span class="product__price">R$ 120,00</span>
+                <a href="#" class="btn btn--primary btn--block">Comprar Agora</a>
+              </div>
+            </article>
+
+            <article class="product reveal">
+              <div class="product__media"><img src="../public/assets/camisa-branca.png" alt="Camisa branca do 14 de Julho" /></div>
+              <div class="product__body">
+                <h3 class="product__name">Camisa Branca</h3>
+                <span class="product__price">R$ 120,00</span>
+                <a href="#" class="btn btn--primary btn--block">Comprar Agora</a>
+              </div>
+            </article>
+
+            <article class="product reveal">
+              <div class="product__media"><img src="../public/assets/camisa-retro.png" alt="Camisa retrô do 14 de Julho" /></div>
+              <div class="product__body">
+                <h3 class="product__name">Camisa Retrô</h3>
+                <span class="product__price">R$ 250,00</span>
+                <a href="#" class="btn btn--primary btn--block">Comprar Agora</a>
+              </div>
+            </article>
+
+            <article class="product reveal">
+              <div class="product__media"><img src="../public/assets/camisa-feminina.png" alt="Camisa feminina do 14 de Julho" /></div>
+              <div class="product__body">
+                <h3 class="product__name">Camisa Feminina</h3>
+                <span class="product__price">R$ 120,00</span>
+                <a href="#" class="btn btn--primary btn--block">Comprar Agora</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer" style="background-image: url('../public/assets/footer-estadio.jfif')">
+      <div class="footer__overlay"></div>
+      <div class="container footer__grid">
+        <div class="footer__col footer__brand">
+          <img src="../public/assets/escudo.png" alt="Escudo do Esporte Clube 14 de Julho" class="footer__crest" />
+          <p class="footer__brand-name">Leão da Fronteira</p>
+          <p class="footer__brand-sub">Fundado em 1902</p>
+        </div>
+
+        <div class="footer__col">
+          <h3 class="footer__heading">Contato</h3>
+          <address class="footer__contact">
+            <p><strong>Endereço</strong><br />Rua Uruguai, 112-224<br />Sant'Ana do Livramento – RS<br />CEP: 97573-541</p>
+            <p><strong>Telefone</strong><br /><a href="tel:+5555996742044">(55) 99674-2044</a></p>
+          </address>
+        </div>
+
+        <div class="footer__col">
+          <h3 class="footer__heading">Links Rápidos</h3>
+          <ul class="footer__links">
+            <li><a href="#home">Início</a></li>
+            <li><a href="#noticias">Notícias</a></li>
+            <li><a href="#jogos">Jogos</a></li>
+            <li><a href="#loja">Loja</a></li>
+            <li><a href="#socio">Sócio</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bar">
+        <div class="container">
+          <p>Desenvolvido por <span>Fronteira Dev</span></p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Voltar ao topo -->
+    <button class="to-top" id="toTop" aria-label="Voltar ao topo">&#8593;</button>
+
+    <script type="module" src="/js/script.js"></script>
+  </body>
+</html>
